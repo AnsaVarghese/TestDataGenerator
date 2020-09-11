@@ -13,7 +13,7 @@
            				var query = document.getElementById("query");
            				var url = document.getElementById("url");		
            				var loc = document.getElementById("loc");	
-           				var fileName = document.getElementById("fileName");						
+           									
            									
 				
 											
@@ -78,7 +78,7 @@ session.invalidate();
 		</center>
 	<center>
  
-		<form method="post" style="color:#003d99" action="dbTofile" onsubmit="return dbTofileformValidation()">
+		<form method="GET" style="color:#003d99" action="DBTOFILE1.jsp" onsubmit="return dbTofileformValidation()">
 		     <label for="uname"><b>Database Username:</b></label>
 			 <input type="text" id="uname" name="username"><br> <br> 
 			 <label for="pass"><b>Database Password:</b></label> 
@@ -91,9 +91,8 @@ session.invalidate();
 		     <input name="type" id="type" type="text" value="<%=request.getParameter("option")%>"readonly/><br><br>
 		     &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<label for="loc"><b>Save File To:</b></label> 
 			<input type="text" id="loc" name="loc" /> <br><br>	
-			&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<label for="fileName"><b>Save File As:</b></label> 
-			<input type="text" id="fileName" name="fileName" /> <br><br>				 
-			<input type="submit" value="Generate Test-Data " size="20"
+					 
+			<input type="submit" value="Continue" size="20"
 				color="blue" />
 				
 		</form>
